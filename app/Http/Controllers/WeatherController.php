@@ -20,7 +20,7 @@ class WeatherController extends Controller
             if ($response->failed()) {
                 return response()->json([
                     'error' => 'Erro ao buscar dados da API',
-                    'message' => $response->json(), // Aqui mostra o erro exato da API
+                    'message' => $response->json(),
                 ], $response->status());
             }
 
